@@ -1,0 +1,18 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.3.RELEASE'
+    id 'war'
+}
+
+version =  '0.0.1-SNAPSHOT'
+wrapper {
+    gradleVersion = '4.8.1'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
