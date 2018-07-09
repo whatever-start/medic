@@ -42,10 +42,16 @@ sourceSets {
         resources {
             srcDir 'src/integrationTest/resources'
         }
+        
+        compileClasspath += configurations.testCompile
+        runtimeClasspath += configurations.testRuntime + sourceSets.main.output
     }
 }
 
-task runIntegrationTest(type: Test) {
+integrationTestClasses.dependsOn classes
 
+task runIntegrationTest(type: Test, dependsOn: integrationTestClasses) {
+    testClassesDir = sourceSets.integrationTest.output.classesDir
+    classpath = sourceSets.integrationTest.runtimeClasspath
 }
 
