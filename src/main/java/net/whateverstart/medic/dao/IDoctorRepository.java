@@ -8,5 +8,6 @@ import net.whateverstart.medic.model.Doctor;
 
 public interface IDoctorRepository extends MongoRepository<Doctor, String> {
     public List<Doctor> findByName(String name);
+    public List<Doctor> findByDepartment(String department);
     
 }

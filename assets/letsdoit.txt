@@ -1,0 +1,14 @@
+* Serving Web Content with Spring MVC
+  https://spring.io/guides/gs/serving-web-content/
+* Testing the Web Layer
+  https://spring.io/guides/gs/testing-web/
+* Set up Jenkins
+- Accessing Data with MongoDB
+  https://spring.io/guides/gs/accessing-data-mongodb/
+- Building a RESTful Web Service
+  https://spring.io/guides/gs/rest-service/
+  https://spring.io/guides/gs/accessing-mongodb-data-rest/
+- Implement the payment to WeChat & alipay
+- Sign with picture
+- Login with WeChat or QQ, etc.
+
